@@ -16,7 +16,7 @@ body {
 .body_grid {
   display: grid;
   grid-template-columns: [column1] 250px [column_2] 1fr;
-  grid-template-rows: [row1_start] 10% [row1_end] 1200px [footer_start] auto [footer_end];
+  grid-template-rows: [row1_start] 10% [row1_end] auto [footer_start] auto [footer_end];
   column-gap: 50px;
   row-gap: 30px;
 }
