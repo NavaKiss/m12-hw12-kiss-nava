@@ -15,7 +15,7 @@ body {
 
 .body_grid {
   display: grid;
-  grid-template-columns: [column1] 250px [column_2] 1fr;
+  grid-template-columns: [column1] 15% [column_2] 1fr;
   grid-template-rows: [row1_start] 10% [row1_end] auto [footer_start] auto [footer_end];
   column-gap: 50px;
   row-gap: 30px;
@@ -27,10 +27,6 @@ body {
 
 .body_grid .footer {
   grid-column: 1 / 4;
-}
-
-.body_grid .nav__container {
-
 }
 
 .header {
@@ -114,8 +110,14 @@ body {
   }
   .nav__container {
     width: 80vw;
-    min-width: 300px;
-    grid-template-columns: repeat(4, 1fr);
+    max-width: 200px;
+  }
+  .body_grid {
+    display: grid;
+    grid-template-columns: [column1] 15% [column_2] 1fr;
+    grid-template-rows: [row1_start] 10% [row1_end] auto [footer_start] auto [footer_end];
+    column-gap: 50px;
+    row-gap: 30px;
   }
   .nav__link, .nav__link--active {
     text-decoration: underline;
